@@ -1,8 +1,7 @@
 /// <references path="../../node_modules/@types//redux-logger" />
-import { applyMiddleware, legacy_createStore as createStore, Middleware, Store } from "redux";
+import { legacy_createStore as createStore, Middleware, Store } from "redux";
 import { addTodo, Todo, TodoAction, todos } from "../mock/reducer";
 import { createLogger } from "redux-logger";
-import { middlewares } from "../mock/customMiddlewares";
 import { ADD_TODO } from "../mock/actionTypes";
 
 var $$observable = (function () {
