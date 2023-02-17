@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/isomorphic-fetch": "^0.0.36",
+    "isomorphic-fetch": "^3.0.0",
     "redux": "^4.2.1"
   },
   "devDependencies": {

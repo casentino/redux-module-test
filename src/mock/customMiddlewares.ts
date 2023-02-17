@@ -57,28 +57,14 @@ const middlewareFourth: Middleware = ({ getState, dispatch }) => {
       `
   );
   return (next) => {
-    console.log("Fourth next()", next);
     return (action) => {
-      console.log("Fourth Action", action);
       return next(action);
     };
   };
 };
 const middlewareFifth: Middleware = ({ getState, dispatch }) => {
-  console.log(
-    `
-      Fifth 
-      getState, dispatch
-      ------
-      ${getState}
-      ------
-      ${dispatch}
-      `
-  );
   return (next) => {
-    console.log("Fifth next()", next);
     return (action) => {
-      console.log("Fifth Action", action);
       return next(action);
     };
   };
